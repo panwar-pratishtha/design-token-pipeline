@@ -1,0 +1,11 @@
+# Secrets: never upload these (our Figma token will live in .env)
+.env
+
+# Downloaded libraries: huge, and npm can re-download them anytime
+node_modules/
+
+# The React app's built output: it can be regenerated
+dist/
+
+# Windows clutter
+Thumbs.db
