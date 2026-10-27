@@ -1,0 +1,86 @@
+{
+  "generatedAt": "2026-10-27T12:12:14.402Z",
+  "standard": "WCAG 2.x Level AA (text contrast)",
+  "passed": 6,
+  "failed": 0,
+  "results": [
+    {
+      "name": "Body text on page background",
+      "foreground": "text",
+      "background": "background",
+      "foregroundHex": "#111827",
+      "backgroundHex": "#ffffff",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "textSize": "normal",
+      "required": 4.5,
+      "ratio": 17.74,
+      "passAA": true
+    },
+    {
+      "name": "Body text on surface (cards)",
+      "foreground": "text",
+      "background": "surface",
+      "foregroundHex": "#111827",
+      "backgroundHex": "#f3f4f6",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "textSize": "normal",
+      "required": 4.5,
+      "ratio": 16.12,
+      "passAA": true
+    },
+    {
+      "name": "Heading on page background",
+      "foreground": "text",
+      "background": "background",
+      "foregroundHex": "#111827",
+      "backgroundHex": "#ffffff",
+      "fontSize": 32,
+      "fontWeight": 700,
+      "textSize": "large",
+      "required": 3,
+      "ratio": 17.74,
+      "passAA": true
+    },
+    {
+      "name": "Caption on surface",
+      "foreground": "text",
+      "background": "surface",
+      "foregroundHex": "#111827",
+      "backgroundHex": "#f3f4f6",
+      "fontSize": 14,
+      "fontWeight": 400,
+      "textSize": "normal",
+      "required": 4.5,
+      "ratio": 16.12,
+      "passAA": true
+    },
+    {
+      "name": "Button label on primary",
+      "foreground": "on-primary",
+      "background": "primary",
+      "foregroundHex": "#ffffff",
+      "backgroundHex": "#1d4ed8",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "textSize": "normal",
+      "required": 4.5,
+      "ratio": 6.7,
+      "passAA": true
+    },
+    {
+      "name": "Primary link on page background",
+      "foreground": "primary",
+      "background": "background",
+      "foregroundHex": "#1d4ed8",
+      "backgroundHex": "#ffffff",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "textSize": "normal",
+      "required": 4.5,
+      "ratio": 6.7,
+      "passAA": true
+    }
+  ]
+}
