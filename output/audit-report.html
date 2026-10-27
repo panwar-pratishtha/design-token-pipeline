@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contrast Audit Report</title>
+  <style>
+    body { font-family: system-ui, sans-serif; color: #111827; background: #ffffff; margin: 0 auto; padding: 24px; max-width: 1000px; line-height: 1.5; }
+    table { border-collapse: collapse; width: 100%; }
+    caption { text-align: left; font-weight: 700; padding-bottom: 8px; }
+    th, td { border: 1px solid #9ca3af; padding: 8px; text-align: left; }
+    thead th { background: #f3f4f6; }
+    .swatch { display: inline-block; width: 16px; height: 16px; border: 1px solid #111827; margin-right: 6px; vertical-align: middle; }
+    .pass { background: #dcfce7; color: #166534; font-weight: 700; }
+    .fail { background: #fee2e2; color: #991b1b; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Contrast Audit Report</h1>
+    <p>Standard: WCAG 2.x Level AA (text contrast)</p>
+    <p>Generated: 2026-10-27T12:12:14.402Z</p>
+    <p><strong>6 passed, 0 failed</strong></p>
+    <table>
+      <caption>Text and background color pairs checked against WCAG AA</caption>
+      <thead>
+        <tr>
+          <th scope="col">Pair</th>
+          <th scope="col">Text color</th>
+          <th scope="col">Background</th>
+          <th scope="col">Font size / weight</th>
+          <th scope="col">Ratio</th>
+          <th scope="col">Needs</th>
+          <th scope="col">Result</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <th scope="row">Body text on page background</th>
+        <td><span class="swatch" aria-hidden="true" style="background:#111827"></span>#111827</td>
+        <td><span class="swatch" aria-hidden="true" style="background:#ffffff"></span>#ffffff</td>
+        <td>16px / 400 (normal)</td>
+        <td>17.74:1</td>
+        <td>4.5:1</td>
+        <td class="pass">PASS</td>
+      </tr>
+      <tr>
+        <th scope="row">Body text on surface (cards)</th>
+        <td><span class="swatch" aria-hidden="true" style="background:#111827"></span>#111827</td>
+        <td><span class="swatch" aria-hidden="true" style="background:#f3f4f6"></span>#f3f4f6</td>
+        <td>16px / 400 (normal)</td>
+        <td>16.12:1</td>
+        <td>4.5:1</td>
+        <td class="pass">PASS</td>
+      </tr>
+      <tr>
+        <th scope="row">Heading on page background</th>
+        <td><span class="swatch" aria-hidden="true" style="background:#111827"></span>#111827</td>
+        <td><span class="swatch" aria-hidden="true" style="background:#ffffff"></span>#ffffff</td>
+        <td>32px / 700 (large)</td>
+        <td>17.74:1</td>
+        <td>3:1</td>
+        <td class="pass">PASS</td>
+      </tr>
+      <tr>
+        <th scope="row">Caption on surface</th>
+        <td><span class="swatch" aria-hidden="true" style="background:#111827"></span>#111827</td>
+        <td><span class="swatch" aria-hidden="true" style="background:#f3f4f6"></span>#f3f4f6</td>
+        <td>14px / 400 (normal)</td>
+        <td>16.12:1</td>
+        <td>4.5:1</td>
+        <td class="pass">PASS</td>
+      </tr>
+      <tr>
+        <th scope="row">Button label on primary</th>
+        <td><span class="swatch" aria-hidden="true" style="background:#ffffff"></span>#ffffff</td>
+        <td><span class="swatch" aria-hidden="true" style="background:#1d4ed8"></span>#1d4ed8</td>
+        <td>16px / 400 (normal)</td>
+        <td>6.7:1</td>
+        <td>4.5:1</td>
+        <td class="pass">PASS</td>
+      </tr>
+      <tr>
+        <th scope="row">Primary link on page background</th>
+        <td><span class="swatch" aria-hidden="true" style="background:#1d4ed8"></span>#1d4ed8</td>
+        <td><span class="swatch" aria-hidden="true" style="background:#ffffff"></span>#ffffff</td>
+        <td>16px / 400 (normal)</td>
+        <td>6.7:1</td>
+        <td>4.5:1</td>
+        <td class="pass">PASS</td>
+      </tr>
+      </tbody>
+    </table>
+    <p>Note: this audit covers only the listed pairs, not the whole interface.</p>
+  </main>
+</body>
+</html>
