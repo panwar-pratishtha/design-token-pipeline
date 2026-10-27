@@ -1,0 +1,11 @@
+/* demo-app/src/components/Heading.css */
+/* No hex codes here. Everything comes from tokens.css via var(). */
+
+.heading {
+  font-family: var(--font-heading-family);
+  font-size: var(--font-heading-size);
+  font-weight: var(--font-heading-weight);
+  line-height: var(--font-heading-line-height);
+  color: var(--color-text);
+  margin: 0 0 var(--space-md);
+}
