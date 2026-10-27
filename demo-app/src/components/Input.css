@@ -1,0 +1,49 @@
+/* demo-app/src/components/Input.css */
+/* Only tokens, no hex codes. */
+
+.ui-field {
+  margin-bottom: var(--space-md);
+}
+
+.ui-field__label {
+  display: block;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.ui-field__hint {
+  margin: 0 0 var(--space-sm);
+  font-size: var(--font-caption-size);
+  line-height: var(--font-caption-line-height);
+  color: var(--color-text);
+}
+
+.ui-field__input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: var(--space-sm);
+  font-family: var(--font-body-family);
+  font-size: var(--font-body-size);
+  color: var(--color-text);
+  background: var(--color-background);
+  border: 2px solid var(--color-text);
+  border-radius: 6px;
+}
+
+/* Visible focus ring for keyboard and mouse users. */
+.ui-field__input:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Error state: thicker, dashed border, so it is not color alone. */
+.ui-field__input--error {
+  border-width: 4px;
+  border-style: dashed;
+}
+
+.ui-field__error {
+  margin: var(--space-sm) 0 0;
+  font-weight: 700;
+  color: var(--color-text);
+}
