@@ -1,0 +1,14 @@
+/* demo-app/src/components/Card.css */
+/* Only tokens, no hex codes. */
+
+.ui-card {
+  background: var(--color-surface);
+  color: var(--color-text);
+  padding: var(--space-lg);
+  border-radius: 8px;
+}
+
+/* Space between two buttons placed side by side inside a card. */
+.ui-card button + button {
+  margin-left: var(--space-sm);
+}
