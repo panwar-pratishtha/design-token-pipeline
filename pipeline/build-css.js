@@ -1,12 +1,14 @@
 // pipeline/build-css.js
-// Goal: turn tokens.json into tokens.css (a list of CSS variables).
+// Goal: turn tokens.json into tokens.css (a list of CSS variables),
+// and also copy it into the React app so the app can import it.
 
 const fs = require('fs');
 const path = require('path');
 
-// Input: the clean tokens. Output: the CSS file.
+// Input: the clean tokens. Outputs: the CSS file, and a copy for the app.
 const tokensPath = path.join(__dirname, '..', 'output', 'tokens.json');
 const cssPath = path.join(__dirname, '..', 'output', 'tokens.css');
+const appCssPath = path.join(__dirname, '..', 'demo-app', 'src', 'tokens.css');
 
 // Read tokens.json and turn the text into an object.
 const tokens = JSON.parse(fs.readFileSync(tokensPath, 'utf8'));
@@ -41,6 +43,11 @@ for (const [name, px] of Object.entries(tokens.spacing)) {
 
 lines.push('}');
 
-// Join all lines with line breaks and save the file.
-fs.writeFileSync(cssPath, lines.join('\n') + '\n');
+// Join all lines with line breaks.
+const css = lines.join('\n') + '\n';
+
+// Save the file in output/ and a copy inside the React app.
+fs.writeFileSync(cssPath, css);
+fs.writeFileSync(appCssPath, css);
 console.log('Saved output/tokens.css with', lines.length, 'lines');
+console.log('Copied to demo-app/src/tokens.css');
