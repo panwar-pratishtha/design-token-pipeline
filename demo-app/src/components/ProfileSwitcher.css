@@ -1,0 +1,30 @@
+/* demo-app/src/components/ProfileSwitcher.css */
+/* Only tokens, no hex codes. */
+
+.ui-profiles {
+  border: 2px solid var(--color-text);
+  border-radius: 6px;
+  padding: var(--space-md);
+  margin: 0;
+}
+
+.ui-profiles__legend {
+  font-weight: 700;
+  padding: 0 var(--space-sm);
+}
+
+.ui-profiles__option {
+  display: block;
+  padding: var(--space-sm) 0;
+  cursor: pointer;
+}
+
+.ui-profiles__option input {
+  margin-right: var(--space-sm);
+  accent-color: var(--color-primary);
+}
+
+.ui-profiles__option input:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+}

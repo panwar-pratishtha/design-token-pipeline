@@ -1,0 +1,35 @@
+/* demo-app/src/profiles.css */
+/* HAND-WRITTEN accessibility profiles (not generated from Figma).
+   Each block overrides token values; components are never touched.
+   The Default profile is simply tokens.css, so it needs no block. */
+
+/* ---------- High Contrast ---------- */
+/* Black background, white text, bright yellow accent. */
+:root[data-profile="high-contrast"] {
+  --color-background: #000000;
+  --color-surface: #1a1a1a;
+  --color-text: #ffffff;
+  --color-primary: #ffd400;
+  --color-on-primary: #000000;
+}
+
+/* ---------- Dyslexia-friendly ---------- */
+/* Same colors as Default. Changes: easier font, bigger text,
+   taller lines and more space. */
+:root[data-profile="dyslexia"] {
+  --font-heading-family: Verdana, Tahoma, sans-serif;
+  --font-heading-size: 36px;
+  --font-heading-line-height: 48px;
+
+  --font-body-family: Verdana, Tahoma, sans-serif;
+  --font-body-size: 18px;
+  --font-body-line-height: 32px;
+
+  --font-caption-family: Verdana, Tahoma, sans-serif;
+  --font-caption-size: 16px;
+  --font-caption-line-height: 28px;
+
+  --space-sm: 12px;
+  --space-md: 24px;
+  --space-lg: 32px;
+}
