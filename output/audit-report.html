@@ -18,9 +18,9 @@
 <body>
   <main>
     <h1>Contrast Audit Report</h1>
-    <p>Standard: WCAG 2.x Level AA (text contrast)</p>
-    <p>Generated: 2026-10-27T12:12:14.402Z</p>
-    <p><strong>6 passed, 0 failed</strong></p>
+    <p>Standard: WCAG 2.x Level AA (text contrast), Default and High Contrast profiles</p>
+    <p>Generated: 2026-10-28T01:52:42.900Z</p>
+    <p><strong>12 passed, 0 failed</strong></p>
     <table>
       <caption>Text and background color pairs checked against WCAG AA</caption>
       <thead>
@@ -36,7 +36,7 @@
       </thead>
       <tbody>
       <tr>
-        <th scope="row">Body text on page background</th>
+        <th scope="row">Default: Body text on page background</th>
         <td><span class="swatch" aria-hidden="true" style="background:#111827"></span>#111827</td>
         <td><span class="swatch" aria-hidden="true" style="background:#ffffff"></span>#ffffff</td>
         <td>16px / 400 (normal)</td>
@@ -45,7 +45,7 @@
         <td class="pass">PASS</td>
       </tr>
       <tr>
-        <th scope="row">Body text on surface (cards)</th>
+        <th scope="row">Default: Body text on surface (cards)</th>
         <td><span class="swatch" aria-hidden="true" style="background:#111827"></span>#111827</td>
         <td><span class="swatch" aria-hidden="true" style="background:#f3f4f6"></span>#f3f4f6</td>
         <td>16px / 400 (normal)</td>
@@ -54,7 +54,7 @@
         <td class="pass">PASS</td>
       </tr>
       <tr>
-        <th scope="row">Heading on page background</th>
+        <th scope="row">Default: Heading on page background</th>
         <td><span class="swatch" aria-hidden="true" style="background:#111827"></span>#111827</td>
         <td><span class="swatch" aria-hidden="true" style="background:#ffffff"></span>#ffffff</td>
         <td>32px / 700 (large)</td>
@@ -63,7 +63,7 @@
         <td class="pass">PASS</td>
       </tr>
       <tr>
-        <th scope="row">Caption on surface</th>
+        <th scope="row">Default: Caption on surface</th>
         <td><span class="swatch" aria-hidden="true" style="background:#111827"></span>#111827</td>
         <td><span class="swatch" aria-hidden="true" style="background:#f3f4f6"></span>#f3f4f6</td>
         <td>14px / 400 (normal)</td>
@@ -72,7 +72,7 @@
         <td class="pass">PASS</td>
       </tr>
       <tr>
-        <th scope="row">Button label on primary</th>
+        <th scope="row">Default: Button label on primary</th>
         <td><span class="swatch" aria-hidden="true" style="background:#ffffff"></span>#ffffff</td>
         <td><span class="swatch" aria-hidden="true" style="background:#1d4ed8"></span>#1d4ed8</td>
         <td>16px / 400 (normal)</td>
@@ -81,11 +81,65 @@
         <td class="pass">PASS</td>
       </tr>
       <tr>
-        <th scope="row">Primary link on page background</th>
+        <th scope="row">Default: Primary link on page background</th>
         <td><span class="swatch" aria-hidden="true" style="background:#1d4ed8"></span>#1d4ed8</td>
         <td><span class="swatch" aria-hidden="true" style="background:#ffffff"></span>#ffffff</td>
         <td>16px / 400 (normal)</td>
         <td>6.7:1</td>
+        <td>4.5:1</td>
+        <td class="pass">PASS</td>
+      </tr>
+      <tr>
+        <th scope="row">High Contrast: Body text on page background</th>
+        <td><span class="swatch" aria-hidden="true" style="background:#ffffff"></span>#ffffff</td>
+        <td><span class="swatch" aria-hidden="true" style="background:#000000"></span>#000000</td>
+        <td>16px / 400 (normal)</td>
+        <td>21:1</td>
+        <td>4.5:1</td>
+        <td class="pass">PASS</td>
+      </tr>
+      <tr>
+        <th scope="row">High Contrast: Body text on surface (cards)</th>
+        <td><span class="swatch" aria-hidden="true" style="background:#ffffff"></span>#ffffff</td>
+        <td><span class="swatch" aria-hidden="true" style="background:#1a1a1a"></span>#1a1a1a</td>
+        <td>16px / 400 (normal)</td>
+        <td>17.4:1</td>
+        <td>4.5:1</td>
+        <td class="pass">PASS</td>
+      </tr>
+      <tr>
+        <th scope="row">High Contrast: Heading on page background</th>
+        <td><span class="swatch" aria-hidden="true" style="background:#ffffff"></span>#ffffff</td>
+        <td><span class="swatch" aria-hidden="true" style="background:#000000"></span>#000000</td>
+        <td>32px / 700 (large)</td>
+        <td>21:1</td>
+        <td>3:1</td>
+        <td class="pass">PASS</td>
+      </tr>
+      <tr>
+        <th scope="row">High Contrast: Caption on surface</th>
+        <td><span class="swatch" aria-hidden="true" style="background:#ffffff"></span>#ffffff</td>
+        <td><span class="swatch" aria-hidden="true" style="background:#1a1a1a"></span>#1a1a1a</td>
+        <td>14px / 400 (normal)</td>
+        <td>17.4:1</td>
+        <td>4.5:1</td>
+        <td class="pass">PASS</td>
+      </tr>
+      <tr>
+        <th scope="row">High Contrast: Button label on primary</th>
+        <td><span class="swatch" aria-hidden="true" style="background:#000000"></span>#000000</td>
+        <td><span class="swatch" aria-hidden="true" style="background:#ffd400"></span>#ffd400</td>
+        <td>16px / 400 (normal)</td>
+        <td>14.67:1</td>
+        <td>4.5:1</td>
+        <td class="pass">PASS</td>
+      </tr>
+      <tr>
+        <th scope="row">High Contrast: Primary link on page background</th>
+        <td><span class="swatch" aria-hidden="true" style="background:#ffd400"></span>#ffd400</td>
+        <td><span class="swatch" aria-hidden="true" style="background:#000000"></span>#000000</td>
+        <td>16px / 400 (normal)</td>
+        <td>14.67:1</td>
         <td>4.5:1</td>
         <td class="pass">PASS</td>
       </tr>

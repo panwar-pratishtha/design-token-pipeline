@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-27T12:12:14.402Z",
-  "standard": "WCAG 2.x Level AA (text contrast)",
-  "passed": 6,
+  "generatedAt": "2026-10-28T01:52:42.900Z",
+  "standard": "WCAG 2.x Level AA (text contrast), Default and High Contrast profiles",
+  "passed": 12,
   "failed": 0,
   "results": [
     {
-      "name": "Body text on page background",
+      "name": "Default: Body text on page background",
       "foreground": "text",
       "background": "background",
       "foregroundHex": "#111827",
@@ -18,7 +18,7 @@
       "passAA": true
     },
     {
-      "name": "Body text on surface (cards)",
+      "name": "Default: Body text on surface (cards)",
       "foreground": "text",
       "background": "surface",
       "foregroundHex": "#111827",
@@ -31,7 +31,7 @@
       "passAA": true
     },
     {
-      "name": "Heading on page background",
+      "name": "Default: Heading on page background",
       "foreground": "text",
       "background": "background",
       "foregroundHex": "#111827",
@@ -44,7 +44,7 @@
       "passAA": true
     },
     {
-      "name": "Caption on surface",
+      "name": "Default: Caption on surface",
       "foreground": "text",
       "background": "surface",
       "foregroundHex": "#111827",
@@ -57,7 +57,7 @@
       "passAA": true
     },
     {
-      "name": "Button label on primary",
+      "name": "Default: Button label on primary",
       "foreground": "on-primary",
       "background": "primary",
       "foregroundHex": "#ffffff",
@@ -70,7 +70,7 @@
       "passAA": true
     },
     {
-      "name": "Primary link on page background",
+      "name": "Default: Primary link on page background",
       "foreground": "primary",
       "background": "background",
       "foregroundHex": "#1d4ed8",
@@ -80,6 +80,84 @@
       "textSize": "normal",
       "required": 4.5,
       "ratio": 6.7,
+      "passAA": true
+    },
+    {
+      "name": "High Contrast: Body text on page background",
+      "foreground": "text",
+      "background": "background",
+      "foregroundHex": "#ffffff",
+      "backgroundHex": "#000000",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "textSize": "normal",
+      "required": 4.5,
+      "ratio": 21,
+      "passAA": true
+    },
+    {
+      "name": "High Contrast: Body text on surface (cards)",
+      "foreground": "text",
+      "background": "surface",
+      "foregroundHex": "#ffffff",
+      "backgroundHex": "#1a1a1a",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "textSize": "normal",
+      "required": 4.5,
+      "ratio": 17.4,
+      "passAA": true
+    },
+    {
+      "name": "High Contrast: Heading on page background",
+      "foreground": "text",
+      "background": "background",
+      "foregroundHex": "#ffffff",
+      "backgroundHex": "#000000",
+      "fontSize": 32,
+      "fontWeight": 700,
+      "textSize": "large",
+      "required": 3,
+      "ratio": 21,
+      "passAA": true
+    },
+    {
+      "name": "High Contrast: Caption on surface",
+      "foreground": "text",
+      "background": "surface",
+      "foregroundHex": "#ffffff",
+      "backgroundHex": "#1a1a1a",
+      "fontSize": 14,
+      "fontWeight": 400,
+      "textSize": "normal",
+      "required": 4.5,
+      "ratio": 17.4,
+      "passAA": true
+    },
+    {
+      "name": "High Contrast: Button label on primary",
+      "foreground": "on-primary",
+      "background": "primary",
+      "foregroundHex": "#000000",
+      "backgroundHex": "#ffd400",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "textSize": "normal",
+      "required": 4.5,
+      "ratio": 14.67,
+      "passAA": true
+    },
+    {
+      "name": "High Contrast: Primary link on page background",
+      "foreground": "primary",
+      "background": "background",
+      "foregroundHex": "#ffd400",
+      "backgroundHex": "#000000",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "textSize": "normal",
+      "required": 4.5,
+      "ratio": 14.67,
       "passAA": true
     }
   ]
